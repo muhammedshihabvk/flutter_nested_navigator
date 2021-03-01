@@ -13,7 +13,8 @@ class CustomNavigator extends StatefulWidget{
   _CustomNavigatorState createState() => _CustomNavigatorState();
 }
 
-class _CustomNavigatorState extends State<CustomNavigator> with AutomaticKeepAliveClientMixin{
+class _CustomNavigatorState extends State<CustomNavigator>{
+  // with AutomaticKeepAliveClientMixin
   @override
   Widget build(BuildContext context) {
     return Navigator(
@@ -48,7 +49,6 @@ class _CustomNavigatorState extends State<CustomNavigator> with AutomaticKeepAli
     );
   }
 
-  @override
-  // TODO: implement wantKeepAlive
-  bool get wantKeepAlive => true;
+  // @override
+  // bool get wantKeepAlive => true;
 }
